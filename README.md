@@ -20,6 +20,9 @@ https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=pro
 Azure AI Projects client library for .NET (code examples)
 https://learn.microsoft.com/en-us/dotnet/api/overview/azure/ai.projects-readme?view=azure-dotnet-preview
 
+Function call (Lab 3)
+https://learn.microsoft.com/en-us/dotnet/api/overview/azure/ai.projects-readme?view=azure-dotnet-preview#function-call
+
 Azure SDK for .NET / Azure.AI.Projects (code samples)
 https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.Projects
 

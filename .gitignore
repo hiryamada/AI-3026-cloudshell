@@ -2,3 +2,8 @@
 *.png
 bin
 obj
+
+# lab 3
+
+ticket-*.txt
+
