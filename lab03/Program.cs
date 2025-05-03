@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿// Add references
+using System.Text.Json;
 using Azure.AI.Projects;
 using Azure.Identity;
 using dotenv.net;

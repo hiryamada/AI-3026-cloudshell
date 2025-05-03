@@ -1,4 +1,4 @@
-﻿
+﻿// Add references
 using Azure.AI.Projects;
 using Azure.Identity;
 using dotenv.net;
