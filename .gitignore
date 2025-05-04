@@ -1,9 +1,15 @@
 .env
-*.png
 bin
 obj
+
+# lab 1
+
+*.png
 
 # lab 3
 
 ticket-*.txt
 
+# lab 5
+
+logs/
