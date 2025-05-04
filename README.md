@@ -1,18 +1,17 @@
 # AI-3026 labs C# implementation
 
-
-
-
-## References
-
-Microsoft Learn
-https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-on-azure/
+This repository contains the code written following the instructions below but using C#.
 
 Lab instructions
 https://microsoftlearning.github.io/mslearn-ai-agents/
 
 Lab GitHub repository
-https://microsoftlearning.github.io/mslearn-ai-agents/
+https://github.com/MicrosoftLearning/mslearn-ai-agents
+
+## References
+
+Microsoft Learn
+https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-on-azure/
 
 Azure AI Agent Service quickstart
 https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-csharp
