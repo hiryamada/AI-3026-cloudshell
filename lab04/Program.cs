@@ -81,5 +81,9 @@ class Program
         {
             Console.WriteLine($"{message.Role}: {message.Content}");
         }
+
+        // clean up
+        await agentsClient.DeleteAgentAsync(azureAIProjectAgent.Id);
+        await agentsClient.DeleteThreadAsync(agentThread.Id);
     }
 }
