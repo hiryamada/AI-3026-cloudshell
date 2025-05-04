@@ -84,10 +84,10 @@ class Program
         var devopsPlugin = KernelPluginFactory.CreateFromType<DevopsPlugin>();
         AzureAIAgent devopsManagerAgent = new(azureAIProjectDevopsManagerAgent, agentsClient, plugins: [devopsPlugin]);
 
+
         // Process log files
         foreach (var logFile in Directory.EnumerateFiles("logs", "*").Order())
         {
-
             // Add the agents to a group chat with a custom termination and selection strategy
             AgentGroupChat chat = new(incidentManagerAgent, devopsManagerAgent)
             {
@@ -117,7 +117,18 @@ class Program
             }
 
             Console.WriteLine();
+
         }
+
+        // clean up
+        await agentsClient.DeleteAgentAsync(azureAIProjectIncidentManagerAgent.Id);
+        await agentsClient.DeleteAgentAsync(azureAIProjectDevopsManagerAgent.Id);
+        PageableList<Azure.AI.Projects.AgentThread> threads = await agentsClient.GetThreadsAsync();
+        foreach (var thread in threads)
+        {
+            await agentsClient.DeleteThreadAsync(thread.Id);
+        }
+
     }
 }
 
